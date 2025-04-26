@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="w-full flex flex-wrap justify-between items-center bg-[#302E2E] py-4 px-8">
+      <div className="w-full flex flex-wrap justify-between items-center py-4 px-8">
         <div>
           <img className="w-full h-10" src={logo} alt="Logo" />
         </div>
@@ -25,14 +25,14 @@ const Navbar = () => {
         </div>
 
         {/* mobile hamburger */}
-        <div className="md:hidden">
+        <div className="block md:hidden">
           <button onClick={() => setOpenMenu(!openMenu)} className="text-white cursor-pointer text-2xl">☰</button>
         </div>
       </div>
 
       {/* mobile menu */}
       {openMenu && (<div>
-        <div className="md:hidden bg-white text-black flex flex-col">
+        <div className="bg-white text-black flex flex-col md:hidden">
           <a href="">Residencies</a>
           <a href="">Our Value</a>
           <a href="">Contact Us</a>
