@@ -1,6 +1,5 @@
 import { HiLocationMarker } from "react-icons/hi"
 import CountUp from "react-countup"
-
 import heroImage from "../../assets/hero-img.jpg"
 
 const Hero = () => {
@@ -25,7 +24,7 @@ const Hero = () => {
 
         <div className="flex justify-start items-center gap-4 text-white">
           <div className="flex flex-col justify-center items-center">
-            <span className="text-4xl">
+            <span className="text-2xl md:text-4xl">
               <CountUp start={8800} end={9000} duration={4} />
               <span className="text-orange-500">+</span>
             </span>
@@ -33,7 +32,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <span className="text-4xl">
+            <span className="text-2xl md:text-4xl">
               <CountUp start={1950} end={2000} duration={4} />
               <span className="text-orange-500">+</span>
             </span>
@@ -41,7 +40,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <span className="text-4xl">
+            <span className="text-2xl md:text-4xl">
               <CountUp end={28} />
               <span className="text-orange-500">+</span>
             </span>

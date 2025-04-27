@@ -1,5 +1,7 @@
 import Navbar from "./Components/Navbar/Navbar"
 import Hero from "./Components/Hero/Hero"
+import Companies from "./Components/Companies/Companies"
+import Residencies from "./Components/Residencies/Residencies"
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         <Navbar />
         <Hero />
       </div>
+      <Companies />
+      <Residencies />
     </>
   )
 }
