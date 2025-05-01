@@ -42,7 +42,7 @@ const Residencies = () => {
           >
             {data?.map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 bg-white p-4 rounded-xl shadow-md transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-2 hover:shadow-xl hover:bg-orange-50">
                   <img className="w-full max-w-60 rounded-lg" src={item.image} alt={item.name} />
                   <span className="flex gap-1">
                     <span className="text-orange-500 text-xl font-bold">$</span>
