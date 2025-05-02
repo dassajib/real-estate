@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import Hero from "./Components/Hero/Hero"
 import Companies from "./Components/Companies/Companies"
 import Residencies from "./Components/Residencies/Residencies"
+import Value from "./Components/Value/Value"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <Companies />
       <Residencies />
+      <Value />
     </>
   )
 }

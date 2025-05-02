@@ -16,7 +16,7 @@ const Hero = () => {
           <span className="text-gray-400">Forget all difficulties in finding a residence for you</span>
         </div>
 
-        <div className="bg-white rounded-md border-[3px] border-[rgba(120,120,120,0.3)] flex justify-between items-center py-3 px-5">
+        <div className="bg-white rounded-md border-[3px] border-[rgba(120,120,120,0.3)] flex justify-between items-center py-2 px-4">
           <HiLocationMarker color="#3D62F8" size={25} />
           <input className="border-none outline-none" type="text" />
           <button className="bg-[#3D62F8] text-white px-6 py-2 rounded-md text-[14px] transition duration-300 ease-in hover:scale-110">Search</button>

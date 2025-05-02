@@ -2,16 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { GrFormPrevious } from "react-icons/gr";
 import { MdOutlineNavigateNext } from "react-icons/md";
-
-import data from "../../utils/sliderData.json";
 import "swiper/css";
 import "swiper/css/navigation";
+
+import data from "../../utils/sliderData.json";
 
 const Residencies = () => {
   return (
     <section className="py-20 px-6">
       <div className="flex flex-col">
-        <div className="mb-12">
+        <div className="text-center md:text-left mb-6 md:mb-12">
           <h3 className="text-orange-500 text-lg md:text-2xl font-semibold">Best Choices</h3>
           <h1 className="text-[#1f3e72] text-xl md:text-3xl font-extrabold">Popular Residencies</h1>
         </div>
@@ -43,7 +43,7 @@ const Residencies = () => {
             {data?.map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="flex flex-col gap-3 bg-white p-4 rounded-xl shadow-md transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-2 hover:shadow-xl hover:bg-orange-50">
-                  <img className="w-full max-w-60 rounded-lg" src={item.image} alt={item.name} />
+                  <img className="w-full md:max-w-60 rounded-lg" src={item.image} alt={item.name} />
                   <span className="flex gap-1">
                     <span className="text-orange-500 text-xl font-bold">$</span>
                     <span className="text-gray-500 text-xl font-bold">{item.price}</span>
@@ -56,7 +56,7 @@ const Residencies = () => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="absolute flex md:-top-16 md:right-24">
+          <div className="absolute md:-top-16 md:right-24">
             <div className="swiper-button-prev cursor-pointer">
               <GrFormPrevious size={14} />
             </div>
