@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-96 w-60 md:h-[550px] md:w-[430px] overflow-hidden border-8 border-[#302E2D] rounded-t-[15rem]">
+      <div className="h-96 w-60 md:h-[550px] md:w-[480px] overflow-hidden border-8 border-[#302E2D] rounded-t-[15rem]">
         <img className="h-full w-full" src={heroImage} alt="Hero Image" />
       </div>
     </section>

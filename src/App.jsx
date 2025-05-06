@@ -3,6 +3,7 @@ import Hero from "./Components/Hero/Hero"
 import Companies from "./Components/Companies/Companies"
 import Residencies from "./Components/Residencies/Residencies"
 import Value from "./Components/Value/Value"
+import Contact from "./Components/Contact/Contact"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Companies />
       <Residencies />
       <Value />
+      <Contact />
     </>
   )
 }
