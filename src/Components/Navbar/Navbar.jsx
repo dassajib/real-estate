@@ -6,7 +6,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <section>
+    <section className="relative">
       <div className="w-full flex flex-wrap justify-between items-center py-4 px-8">
         <div>
           <img className="w-full h-10" src={logo} alt="Logo" />
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {openMenu && (<div>
-        <div className="bg-white text-black flex flex-col md:hidden">
+        <div className="bg-white px-14 py-10 text-black font-bold rounded-lg flex flex-col gap-8 md:hidden absolute top-16 right-8 z-10">
           <a href="">Residencies</a>
           <a href="">Our Value</a>
           <a href="">Contact Us</a>

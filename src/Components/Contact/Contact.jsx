@@ -1,13 +1,13 @@
-import contactImg from "../../assets/contactImg.avif"
 import { IoCall } from "react-icons/io5";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { FaRegMessage } from "react-icons/fa6";
 import { MdVideoCall } from "react-icons/md";
+import contactImg from "../../assets/contactImg.avif"
 
 const Contact = () => {
     return (
         <section className="py-16">
-            <div className="flex justify-between items-center gap-8 px-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8 px-6">
                 <div className="flex-1">
                     <div>
                         <h3 className="text-orange-500 text-lg md:text-2xl font-semibold mb-3">Our Contact</h3>
@@ -21,11 +21,11 @@ const Contact = () => {
                                     <IoCall color="blue" size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1F3E72] text-lg font-semibold">Call</h3>
-                                    <p className="text-gray-400">021 123 145 14</p>
+                                    <h3 className="text-[#1F3E72] text-md md:text-lg font-semibold">Call</h3>
+                                    <p className="text-gray-400 text-sm md:text-md">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
+                            <button className="text-[#3C61F4] text-sm md:text-md bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Call Now
                             </button>
                         </div>
@@ -36,11 +36,11 @@ const Contact = () => {
                                     <IoChatboxEllipsesOutline color="blue" size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1F3E72] text-lg font-semibold">Chat</h3>
-                                    <p className="text-gray-400">021 123 145 14</p>
+                                    <h3 className="text-[#1F3E72] text-md md:text-lg font-semibold">Chat</h3>
+                                    <p className="text-gray-400 text-sm md:text-md">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
+                            <button className="text-[#3C61F4] text-sm md:text-md bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Chat Now
                             </button>
                         </div>
@@ -51,11 +51,11 @@ const Contact = () => {
                                     <MdVideoCall color="blue" size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1F3E72] text-lg font-semibold">Video Call</h3>
-                                    <p className="text-gray-400">021 123 145 14</p>
+                                    <h3 className="text-[#1F3E72] text-md md:text-lg font-semibold">Video Call</h3>
+                                    <p className="text-gray-400 text-sm md:text-md">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
+                            <button className="text-[#3C61F4] text-sm md:text-md bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Video Call Now
                             </button>
                         </div>
@@ -66,11 +66,11 @@ const Contact = () => {
                                     <FaRegMessage color="blue" size={20} />
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1F3E72] text-lg font-semibold">Message</h3>
-                                    <p className="text-gray-400">021 123 145 14</p>
+                                    <h3 className="text-[#1F3E72] text-md md:text-lg font-semibold">Message</h3>
+                                    <p className="text-gray-400 text-sm md:text-md">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
+                            <button className="text-[#3C61F4] text-sm md:text-md bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Message Now
                             </button>
                         </div>

@@ -4,7 +4,7 @@ import Accordion from "../Accordion/Accordion"
 const Value = () => {
     return (
         <section>
-            <div className="flex justify-center items-center gap-8 px-6">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-6">
                 <div className="flex-1">
                     <div className="h-96 w-60 md:h-[550px] md:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
                         <img className="h-full w-full" src={valueImg} alt="Value image" />
