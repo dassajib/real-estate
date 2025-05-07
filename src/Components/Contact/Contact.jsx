@@ -6,7 +6,7 @@ import { MdVideoCall } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <section>
+        <section className="py-16">
             <div className="flex justify-between items-center gap-8 px-6">
                 <div className="flex-1">
                     <div>
@@ -25,7 +25,7 @@ const Contact = () => {
                                     <p className="text-gray-400">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md">
+                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Call Now
                             </button>
                         </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                                     <p className="text-gray-400">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md">
+                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Chat Now
                             </button>
                         </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                                     <p className="text-gray-400">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md">
+                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Video Call Now
                             </button>
                         </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                                     <p className="text-gray-400">021 123 145 14</p>
                                 </div>
                             </div>
-                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md">
+                            <button className="text-[#3C61F4] bg-gray-200 font-semibold hover:bg-[#3C61F4] hover:text-white w-full py-2 rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-95">
                                 Message Now
                             </button>
                         </div>
