@@ -4,7 +4,7 @@ import heroImage from "../../assets/hero-img.jpg"
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-around items-center pt-6 pb-6">
+    <section className="flex flex-col md:flex-row justify-around items-center pt-24 pb-6">
       <div className="flex flex-col gap-12">
         <div className="relative z-[1]">
           <div className="absolute w-16 h-16 right-[100px] -top-4 rounded-full bg-orange-400 z-[-1]" />

@@ -1,13 +1,26 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import logo from "../../assets/logo.png"
 
 const Navbar = () => {
 
+  const [sticky, setSticky] = useState(false)
   const [openMenu, setOpenMenu] = useState(false)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <section className="relative">
-      <div className="w-full flex flex-wrap justify-between items-center py-4 px-8">
+    <nav className="relative">
+      <div
+        className={`w-full flex flex-wrap justify-between items-center py-4 px-8 fixed top-0 left-0 z-50 transition-all duration-300 ${sticky ? "bg-[#3D62F8] shadow-md" : "bg-transparent"
+          }`}
+      >
         <div>
           <img className="w-full h-10" src={logo} alt="Logo" />
         </div>
@@ -44,8 +57,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>)}
-
-    </section>
+    </nav>
   )
 }
 
