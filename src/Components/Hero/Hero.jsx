@@ -1,5 +1,6 @@
 import { HiLocationMarker } from "react-icons/hi"
 import CountUp from "react-countup"
+import { motion } from "framer-motion"
 import heroImage from "../../assets/hero-img.jpg"
 
 const Hero = () => {
@@ -8,7 +9,11 @@ const Hero = () => {
       <div className="flex flex-col gap-12">
         <div className="relative z-[1]">
           <div className="absolute w-16 h-16 right-[100px] -top-4 rounded-full bg-orange-400 z-[-1]" />
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl/[65px] font-semibold">Discover <br /> Most Suitable <br /> Property</h1>
+          <motion.h1
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-white text-4xl md:text-5xl lg:text-6xl/[65px] font-semibold">Discover <br /> Most Suitable <br /> Property</motion.h1>
         </div>
 
         <div className="flex flex-col justify-center items-start">
@@ -49,9 +54,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#302E2D] rounded-t-[15rem]">
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#302E2D] rounded-t-[15rem]"
+      >
         <img className="h-full w-full" src={heroImage} alt="Hero Image" />
-      </div>
+      </motion.div>
     </section>
   )
 }
