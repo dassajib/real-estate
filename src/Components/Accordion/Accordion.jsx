@@ -34,7 +34,7 @@ const AccordionItem = ({ title, content, icon, isOpen, onToggle }) => {
                 className="w-full flex justify-between items-center gap-2 py-3 px-4 font-medium hover:bg-gray-100 transition"
             >
                 {icon}
-                <span className="text-[#1F3E72] text-sm md:text-lg font-bold flex-1">{title}</span>
+                <span className="text-[#1F3E72] text-sm md:text-md lg:text-lg font-bold flex-1">{title}</span>
                 <TiArrowSortedDown
                     className={`text-[#4066FF] transition-transform ${isOpen ? "rotate-180" : ""}`}
                     size={20}

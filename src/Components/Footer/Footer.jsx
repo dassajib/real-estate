@@ -22,7 +22,7 @@ const Footer = () => {
                         <span className="text-gray-400 text-xs md:text-sm">145 New York, FL 5467, USA</span>
                     </div>
 
-                    <div className="text-[#00104A] font-medium md:font-semibold flex gap-3 md:gap-6">
+                    <div className="text-[#00104A] font-medium md:font-semibold flex justify-center gap-3 md:gap-6">
                         <span>Property</span>
                         <span>Service</span>
                         <span>Product</span>

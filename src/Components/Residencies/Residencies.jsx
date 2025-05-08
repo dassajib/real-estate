@@ -56,12 +56,12 @@ const Residencies = () => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="absolute md:-top-16 md:right-24">
-            <div className="swiper-button-prev cursor-pointer">
-              <GrFormPrevious size={14} />
+          <div className="absolute right-1/2 top-80 md:-top-16 md:right-24 flex items-center gap-2">
+            <div className="swiper-button-prev cursor-pointer text-gray-600 hover:text-orange-500">
+              <GrFormPrevious />
             </div>
-            <div className="swiper-button-next cursor-pointer">
-              <MdOutlineNavigateNext size={14} />
+            <div className="swiper-button-next cursor-pointer text-gray-600 hover:text-orange-500">
+              <MdOutlineNavigateNext />
             </div>
           </div>
         </div>

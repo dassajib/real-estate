@@ -77,7 +77,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="h-96 w-60 md:h-[550px] md:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
+                    <div className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
                         <img className="h-full w-full" src={contactImg} alt="Value image" />
                     </div>
                 </div>
