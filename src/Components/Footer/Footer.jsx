@@ -2,7 +2,7 @@ import logo2 from "../../assets/logo2.png"
 
 const Footer = () => {
     return (
-        <section className="py-10 mx-6">
+        <section className="pb-10 mx-6">
             <div className="bg-[#4161DF] rounded-lg text-center border-8 border-[#5D77D6]">
                 <h1 className="text-white text-xl md:text-3xl font-extrabold py-8">Get started with Homyz</h1>
                 <p className="text-gray-300 text-xs md:text-sm px-6 md:px-0">Subscribe and find super attractive price quotes from us.</p>

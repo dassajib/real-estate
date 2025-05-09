@@ -56,7 +56,7 @@ const Residencies = () => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="absolute right-1/2 top-80 md:-top-16 md:right-24 flex items-center gap-2">
+          <div className="absolute right-1/2 top-[350px] md:-top-16 md:right-24 flex items-center gap-2">
             <div className="swiper-button-prev cursor-pointer text-gray-600 hover:text-orange-500">
               <GrFormPrevious />
             </div>

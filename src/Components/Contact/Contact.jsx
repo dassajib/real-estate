@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { IoCall } from "react-icons/io5";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { FaRegMessage } from "react-icons/fa6";
@@ -77,9 +78,17 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
+                    <motion.div initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut",
+                            type: "spring",
+                            stiffness: 80,
+                        }}
+                        viewport={{ once: true, amount: 0.5 }} className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
                         <img className="h-full w-full" src={contactImg} alt="Value image" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
