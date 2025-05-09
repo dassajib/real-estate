@@ -7,8 +7,8 @@ import contactImg from "../../assets/contactImg.avif"
 
 const Contact = () => {
     return (
-        <section className="py-16">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-8 px-6">
+        <section className="max-w-[1440px] mx-auto py-16">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-6">
                 <div className="flex-1">
                     <div>
                         <h3 className="text-orange-500 text-lg md:text-2xl font-semibold mb-3">Our Contact</h3>
@@ -86,7 +86,9 @@ const Contact = () => {
                             type: "spring",
                             stiffness: 80,
                         }}
-                        viewport={{ once: true, amount: 0.5 }} className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]">
+                        viewport={{ once: true, amount: 0.5 }}
+                        className="h-96 w-60 md:h-[450px] md:w-[280px] lg:h-[550px] lg:w-[480px] overflow-hidden border-8 border-[#EAEAEA] rounded-t-[15rem]"
+                    >
                         <img className="h-full w-full" src={contactImg} alt="Value image" />
                     </motion.div>
                 </div>

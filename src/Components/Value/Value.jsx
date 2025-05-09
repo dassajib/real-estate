@@ -4,7 +4,7 @@ import Accordion from "../Accordion/Accordion";
 
 const Value = () => {
     return (
-        <section>
+        <section className="max-w-[1440px] mx-auto">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-6">
                 <div className="flex-1">
                     <motion.div
